@@ -87,4 +87,5 @@ class program500
             System.out.println("Strings are not anagram");
         }
     }
+
 }
