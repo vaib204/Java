@@ -1,0 +1,23 @@
+import java.util.*;
+
+class program96
+{
+  public static void main(String a[])
+  {
+    Scanner sobj = new Scanner(System.in);
+
+    System.out.println("Enter String:");
+    String str = sobj.nextLine();
+
+    str = str.trim();
+
+    str = str.replaceAll("\\s+", " ");
+
+    StringBuilder sboj = new StringBuilder(str);
+
+    sboj.reverse();
+
+    System.out.println(sboj);
+
+  }
+}
