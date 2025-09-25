@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////////////
 // file name   - program105.c
-// description - write a program to accsepct a array from user and arrange the Array in sorted manner
+// description - write a program to accsepct a array from user and arrange the Array in Decrement sorted manner
 // Author = Vaibhav mukund kulkarni
 ///////////////////////////////////////////////////////////////////////
 import java.util.*;
@@ -40,14 +40,14 @@ class Display
   } 
  }
 
- boolean IncrementSorted()
+ boolean DecrementSorted()
  {
   int i  = 0;
   boolean bFlag = true;
 
   for(i = 0;i < isize - 1;i++)
   {
-    if(Arr[i] <= Arr[i+1])
+    if(Arr[i] > Arr[i+1])
     {
     continue;
     }
@@ -63,7 +63,7 @@ class Display
 }
 
 
-class program110
+class program111
 {
   public static void main(String a[])
   {
@@ -78,14 +78,14 @@ class program110
     dobj.Accsepct();
     dobj.display();
 
-    boolean bret = dobj.IncrementSorted();
+    boolean bret = dobj.DecrementSorted();
     if(bret == true)
     {
-      System.out.println("Data is sorted in increment order");
+      System.out.println("Data is sorted in decrement order");
     }
     else
     {
-      System.out.println("Data is  not sorted in increment order");
+      System.out.println("Data is  not sorted in decrement order");
     }
   }
 }
